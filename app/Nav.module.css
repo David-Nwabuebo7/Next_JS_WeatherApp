@@ -1,0 +1,12 @@
+.nav{
+    background-color: black;
+    color: white;
+     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 100vw;
+    height: 7vh;
+    padding: 1rem;
+    font-family: var(--font-mono);
+}
