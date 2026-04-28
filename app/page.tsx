@@ -225,7 +225,7 @@ export default function Home() {
               />
             )
 
-          }) : (<SevenDaysWeatherData  weatherIcon='' />)}
+          }) : null}
 
         </section>
       </main>
