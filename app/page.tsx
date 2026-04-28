@@ -85,26 +85,11 @@ interface Coord {
   lon: number;
 }
 
-type  Props = {
-  visibilty: string;
-  humidity: string;
-  windSpeed: string;
-  airpressure: string;
-  sunrise: string;
-  sunset: string;
-  weatherIcon: string;
-  date: string;
-  day: string;
-  temp: number;
-  feels_like: number;
-  temp_min: number;
-  temp_max: number;
-  description: string;
-}
 
 
 
-export default function Home(props: Props) {
+
+export default function Home() {
   const [Place , setPlace] = useAtom(placeAtom)
   const [Loading, setLoadingCity] = useAtom(LoadingCity)
 
@@ -240,7 +225,7 @@ export default function Home(props: Props) {
               />
             )
 
-          }) : (<SevenDaysWeatherData {...props} weatherIcon='' />)}
+          }) : (<SevenDaysWeatherData  weatherIcon='' />)}
 
         </section>
       </main>
