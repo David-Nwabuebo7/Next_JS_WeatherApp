@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 //};
  
  const queryClient = new QueryClient()
-export default function RootLayout({ children}) {
+export default function RootLayout({ children: React.ReactNode }) {
   return (
     <html lang="en">
       <QueryClientProvider client={queryClient}>
